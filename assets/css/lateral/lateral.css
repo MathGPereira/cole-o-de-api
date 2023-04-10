@@ -1,0 +1,15 @@
+.lateral {
+    background: #C2C2C2;
+    color: #FFFFFF;
+    height: 100vh;
+    left: 0;
+    padding: 2em 1em;
+    position: absolute;
+    top: 0;
+    transition: left .4s linear;
+    width: 60vw;
+}
+
+/* .lateral--inativo {
+    left: -999px;
+} */

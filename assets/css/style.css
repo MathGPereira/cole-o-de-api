@@ -1,3 +1,20 @@
+/* Variáveis CSS Globais */
 :root {
-    --cor-fundo-cabecalho: linear-gradient(to bottom, #300F59, #9AA197);
+    /* Body */
+        --font-family-padrao: 'Ubuntu', sans-serif;
+        --font-size-padrao: 16px;
+        --font-weight-padrao: 400;
+    /* Body */
+    /* Cabeçalho */
+        --background-cabecalho: linear-gradient(to bottom, #300F59, #9AA197);
+    /* Cabeçalho */
+    /* Lateral */
+        /* --background-lateral: ; */
+    /* Lateral */
+}
+
+body {
+    font-family: var(--font-family-padrao);
+    font-size: var(--font-size-padrao);
+    font-weight: var(--font-weight-padrao);
 }

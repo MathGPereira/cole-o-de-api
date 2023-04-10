@@ -8,7 +8,11 @@
         <link type="text/css" rel="stylesheet" href="./assets/css/reset.css">
         <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
         <link type="text/css" rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/lateral/lateral.css">
         <link type="image/x-icon" rel="shortcut icon" href="./assets/img/icones/navegador/icone-principal.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="cabecalho">
@@ -19,6 +23,21 @@
                 <img src="./assets/img/logo/logo.png" alt="Galeria de API's" class="titulo__logo">
             </h1>
         </header>
+        <aside class="lateral lateral--inativo">
+            <nav class="lateral__navegacao">
+                <ul class="navegacao__lista-apis">
+                    <li class="lista-apis__api lista-apis__api--nasa">NASA</li>
+                    <li class="lista-apis__api lista-apis__api--qrcode">QR Code</li>
+                    <li class="lista-apis__api lista-apis__api--clima">Clima</li>
+                    <li class="lista-apis__api lista-apis__api--paises">Países</li>
+                    <li class="lista-apis__api lista-apis__api--dicionario">Dicionário</li>
+                    <li class="lista-apis__api lista-apis__api--conselhos">Conselhos</li>
+                    <li class="lista-apis__api lista-apis__api--ip">Geolocalização IP</li>
+                    <li class="lista-apis__api lista-apis__api--url">Shortcode</li>
+                    <li class="lista-apis__api lista-apis__api--filmes">Filmes</li>
+                </ul>
+            </nav>
+        </aside>
         <script type="text/javascript" src="./assets/js/main.js"></script>
     </body>
 </html>
