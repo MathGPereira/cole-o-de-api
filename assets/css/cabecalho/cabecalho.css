@@ -1,0 +1,22 @@
+.cabecalho {
+    align-items: center;
+    background-image: var(--cor-fundo-cabecalho);
+    box-sizing: border-box;
+    column-gap: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    width: 100vw;
+}
+
+.menu-hamburguer__icone {
+    background: url("../../img/icones/menu-api.png") no-repeat center center / cover;
+    cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+}
+
+.titulo__logo {
+    width: 100px;
+}
