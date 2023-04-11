@@ -20,14 +20,14 @@
     <body>
         <header class="cabecalho">
             <h1 class="cabecalho__titulo">Galeria De API's</h1>
-            <div class="cabecalho__menu-hamburguer" data-menu-api>
+            <div class="cabecalho__menu-hamburguer" data-botao-estado>
                 <i class="menu-hamburguer__icone" aria-label="Menu do tipo hambúrguer"></i>
             </div>
             <div class="cabecalho__banner"></div>
         </header>
-        <aside class="lateral lateral--inativo" data-menu-lateral>
+        <aside class="lateral" data-menu-lateral>
             <div class="lateral__icone">
-                <i class="icone__sair" aria-label="Sair"></i>
+                <i class="icone__sair" aria-label="Sair" data-botao-estado></i>
             </div>
             <nav class="lateral__navegacao">
                 <ul class="navegacao__lista-apis">
@@ -61,6 +61,6 @@
                 </ul>
             </nav>
         </aside>
-        <!-- <script type="module" src="./assets/js/main.js"></script> -->
+        <script type="module" src="./assets/js/mobile/mobile.js"></script>
     </body>
 </html>

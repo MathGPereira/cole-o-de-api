@@ -16,6 +16,7 @@
 }
 
 .cabecalho__menu-hamburguer {
+    cursor: pointer;
     justify-self: end;
     margin-right: 1em;
     width: 32px;

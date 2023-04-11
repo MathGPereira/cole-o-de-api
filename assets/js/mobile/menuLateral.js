@@ -1,5 +1,5 @@
-export function abreMenuLateral() {
+export default function mudaEstadoDoMenuLateral() {
     const menuLateral = document.querySelector("[data-menu-lateral]");
-
-    menuLateral.classList.toggle("lateral--inativo");
+    
+    menuLateral.classList.toggle("lateral--ativo");
 }

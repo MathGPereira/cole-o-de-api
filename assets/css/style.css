@@ -13,7 +13,7 @@
         --font-size-cabecalho: 32px;
         --font-weight-cabecalho: 500;
         --icone-hamburguer-cabecalho: url("../../img/icones/cabecalho/menu-hamburguer.png") no-repeat center center / cover;
-        --banner-cabecalho: url("../../img/cabecalho-banner.png") no-repeat center center / cover;
+        --banner-cabecalho: url("../../img/cabecalho/cabecalho-banner.png") no-repeat center center / cover;
     /* Cabeçalho */
     /* Lateral */
         --background-lateral: #DEDAFF;

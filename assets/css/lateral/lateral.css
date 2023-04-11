@@ -1,11 +1,17 @@
 .lateral {
     background-color: var(--background-lateral);
     height: 100vh;
+    left: -9999px;
     padding: 1.5em 1em 0;
     position: absolute;
     text-align: right;
+    transition: left .7s ease-in-out;
     top: 0;
     width: 60vw;
+}
+
+.lateral--ativo {
+    left: 0;
 }
 
 .icone__sair {
