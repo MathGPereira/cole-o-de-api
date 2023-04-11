@@ -13,17 +13,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="cabecalho">
-            <div class="cabecalho__menu-hamburguer" data-menu-hamburguer>
-                <i class="menu-hamburguer__icone"></i>
+            <h1 class="cabecalho__titulo">Galeria De API's</h1>
+            <div class="cabecalho__menu-hamburguer" data-menu-api>
+                <i class="menu-hamburguer__icone" aria-label="Menu do tipo hambúrguer"></i>
             </div>
-            <h1 class="cabecalho__titulo">
-                <img src="./assets/img/logo/logo.png" alt="Galeria de API's" class="titulo__logo">
-            </h1>
+            <div class="cabecalho__banner"></div>
         </header>
-        <aside class="lateral lateral--inativo">
+        
+        <!-- <aside class="lateral lateral--inativo" data-menu-lateral>
+            <img src="./assets/img/icones/lateral/x.png" alt="Sair" class="lateral__sair">
             <nav class="lateral__navegacao">
                 <ul class="navegacao__lista-apis">
                     <li class="lista-apis__api lista-apis__api--nasa">NASA</li>
@@ -37,7 +41,7 @@
                     <li class="lista-apis__api lista-apis__api--filmes">Filmes</li>
                 </ul>
             </nav>
-        </aside>
-        <script type="text/javascript" src="./assets/js/main.js"></script>
+        </aside> -->
+        <!-- <script type="module" src="./assets/js/main.js"></script> -->
     </body>
 </html>

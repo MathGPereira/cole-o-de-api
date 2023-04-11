@@ -3,10 +3,17 @@
     /* Body */
         --font-family-padrao: 'Ubuntu', sans-serif;
         --font-size-padrao: 16px;
+        --font-style-padrao: normal;
         --font-weight-padrao: 400;
+        --line-height-padrao: 1em;
     /* Body */
     /* Cabeçalho */
-        --background-cabecalho: linear-gradient(to bottom, #300F59, #9AA197);
+        --background-cabecalho: #FCFCFC;
+        --font-family-cabecalho: 'Cute Font', cursive;
+        --font-size-cabecalho: 32px;
+        --font-weight-cabecalho: 500;
+        --icone-cabecalho: url("../../img/icones/cabecalho/menu-hamburguer.png") no-repeat center center / cover;
+        --banner-cabecalho: url("../../img/cabecalho-banner.png") no-repeat center center / cover;
     /* Cabeçalho */
     /* Lateral */
         /* --background-lateral: ; */
@@ -14,7 +21,5 @@
 }
 
 body {
-    font-family: var(--font-family-padrao);
-    font-size: var(--font-size-padrao);
-    font-weight: var(--font-weight-padrao);
+    font: var(--font-style-padrao) var(--font-weight-padrao) var(--font-size-padrao)/var(--line-height-padrao) var(--font-family-padrao);
 }
