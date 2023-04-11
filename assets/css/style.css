@@ -21,8 +21,17 @@
         --color-lateral: #3b3968;
         --icone-sair-lateral: url("../../img/icones/lateral/x.png") no-repeat center center / cover;
     /* Lateral */
+    /* Principal */
+        /* Sobre-galeria */
+            --background-sobre-galeria: #e0e0e077;
+            --color-titulo-sobre-galeria: #141414E3;
+            --font-size-titulo-sobre-galeria: 24px;
+            --font-weight-titulo-sobre-galeria: 700;
+        /* Sobre-galeria */
+    /* Principal */
 }
 
 body {
     font: var(--font-style-padrao) var(--font-weight-padrao) var(--font-size-padrao)/var(--line-height-padrao) var(--font-family-padrao);
+    height: 100vh;
 }

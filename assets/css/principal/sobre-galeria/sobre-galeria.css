@@ -1,0 +1,16 @@
+.principal__sobre-galeria {
+    background-color: var(--background-sobre-galeria);
+    padding: 0 1em 1em;
+}
+
+.sobre-galeria__titulo {
+    color: var(--color-titulo-sobre-galeria);
+    font-size: var(--font-size-titulo-sobre-galeria);
+    font-weight: var(--font-weight-titulo-sobre-galeria);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.sobre-galeria__descricao {
+    line-height: 1.35em;
+}

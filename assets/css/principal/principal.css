@@ -1,0 +1,7 @@
+@import url("./sobre-galeria/sobre-galeria.css");
+
+.principal {
+    box-sizing: border-box;
+    height: calc(100vh - 11.375em);
+    width: 100vw;
+}
