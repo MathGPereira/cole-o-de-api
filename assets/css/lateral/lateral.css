@@ -1,5 +1,6 @@
 .lateral {
     background-color: var(--background-lateral);
+    box-shadow: 1px 2px 5px #1a1a1a9f;
     height: 100vh;
     left: -9999px;
     padding: 1.5em 1em 0;
