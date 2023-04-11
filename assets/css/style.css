@@ -35,9 +35,16 @@
             --font-weight-titulo-citacao: 500;
         /* Citacao */
         /* Galeria */
+            --background-galeria: #e0e0e077;
             --color-titulo-galeria: #141414E3;
             --font-size-titulo-galeria: 24px;
             --font-weight-titulo-galeria: 700;
+            /* Galeria-api */
+                --background-galeria-api: #FCFCFC;
+                --background-link-galeria-api: #8B0000;
+                --color-link-galeria-api: #FCFCFC;
+                --font-size-titulo-galeria-api: 20px;
+            /* Galeria-api */
         /* Galeria */
     /* Principal */
 }

@@ -1,0 +1,49 @@
+.galeria__api {
+    background-color: var(--background-galeria-api);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    text-align: left;
+    width: 100%;
+}
+
+.api__banner {
+    height: 185px;
+    width: 100%;
+}
+
+.api__titulo {
+    text-align: center;
+    font-size: var(--font-size-titulo-galeria-api);
+}
+
+.titulo__sigla {
+    cursor: help;
+    text-decoration: none;
+}
+
+.api__descricao {
+    line-height: 1.3em;
+}
+
+.api__botao {
+    background-color: var(--background-link-galeria-api);
+    border-radius: 5px;
+    color: var(--color-link-galeria-api);
+    cursor: pointer;
+    padding: .5em 0;
+    text-align: center;
+    transition: background-color .1s ease-in;
+}
+
+.api__botao:hover {
+    background-color: #690000;
+}
+
+.api__botao:active {
+    background-color: #690000a2;
+}

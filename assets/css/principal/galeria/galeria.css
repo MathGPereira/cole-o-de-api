@@ -1,17 +1,21 @@
 @import url("./galeria-api/apis.css");
 
 .principal__galeria {
+    background-color: var(--background-galeria);
+    overflow-x: hidden;
+    padding: 1em;
     text-align: center;
 }
 
 .galeria__titulo {
     color: var(--color-titulo-galeria);
     font: var(--font-weight-titulo-galeria) var(--font-size-titulo-galeria) var(--font-family-padrao);
-    padding: 1em 0 0;
+    padding: 1em 0;
 }
 
 .galeria__artigos {
     display: flex;
+    gap: 10px;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5em;
 }
