@@ -1,15 +1,74 @@
 .lateral {
-    background: #C2C2C2;
-    color: #FFFFFF;
+    background-color: var(--background-lateral);
     height: 100vh;
-    left: 0;
-    padding: 2em 1em;
+    padding: 1.5em 1em 0;
     position: absolute;
+    text-align: right;
     top: 0;
-    transition: left .4s linear;
     width: 60vw;
 }
 
-.lateral--inativo {
-    left: -999px;
+.icone__sair {
+    background: var(--icone-sair-lateral);
+    height: 32px;
+    margin-bottom: 1.5em;
+    width: 32px;
+}
+
+.navegacao__lista-apis {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.lista-apis__item-api {
+    padding: 8px;
+}
+
+.lista-apis__item-api:hover {
+    border-left: 4px solid var(--border-color-hover-lateral);
+    border-radius: 4px;
+}
+
+.item-api__link {
+    color: var(--color-lateral);
+    margin-left: 1em;
+}
+
+.lista-apis__item-api--nasa::before {
+    content: url("../../img/icones/lateral/nasa.png");
+}
+
+.lista-apis__item-api--qrcode::before {
+    content: url("../../img/icones/lateral/qrcode.png");
+}
+
+.lista-apis__item-api--clima::before {
+    content: url("../../img/icones/lateral/clima.png");
+}
+
+.lista-apis__item-api--paises::before {
+    content: url("../../img/icones/lateral/países.png");
+}
+
+.lista-apis__item-api--dicionario::before {
+    content: url("../../img/icones/lateral/dicionario.png");
+}
+
+.lista-apis__item-api--conselhos::before {
+    content: url("../../img/icones/lateral/conselhos.png");
+}
+
+.lista-apis__item-api--ip::before {
+    content: url("../../img/icones/lateral/ip.png");
+}
+
+.lista-apis__item-api--url::before {
+    content: url("../../img/icones/lateral/url.png");
+}
+
+.lista-apis__item-api--filmes::before {
+    content: url("../../img/icones/lateral/filmes.png");
 }

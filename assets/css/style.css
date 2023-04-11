@@ -12,11 +12,14 @@
         --font-family-cabecalho: 'Cute Font', cursive;
         --font-size-cabecalho: 32px;
         --font-weight-cabecalho: 500;
-        --icone-cabecalho: url("../../img/icones/cabecalho/menu-hamburguer.png") no-repeat center center / cover;
+        --icone-hamburguer-cabecalho: url("../../img/icones/cabecalho/menu-hamburguer.png") no-repeat center center / cover;
         --banner-cabecalho: url("../../img/cabecalho-banner.png") no-repeat center center / cover;
     /* Cabeçalho */
     /* Lateral */
-        /* --background-lateral: ; */
+        --background-lateral: #DEDAFF;
+        --border-color-hover-lateral: #868399;
+        --color-lateral: #3b3968;
+        --icone-sair-lateral: url("../../img/icones/lateral/x.png") no-repeat center center / cover;
     /* Lateral */
 }
 

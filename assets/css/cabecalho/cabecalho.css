@@ -22,7 +22,7 @@
 }
 
 .menu-hamburguer__icone {
-    background: var(--icone-cabecalho);
+    background: var(--icone-hamburguer-cabecalho);
     height: 2em;
     width: 2em;
 }
