@@ -34,6 +34,11 @@
             --font-size-titulo-citacao: 18px;
             --font-weight-titulo-citacao: 500;
         /* Citacao */
+        /* Galeria */
+            --color-titulo-galeria: #141414E3;
+            --font-size-titulo-galeria: 24px;
+            --font-weight-titulo-galeria: 700;
+        /* Galeria */
     /* Principal */
 }
 

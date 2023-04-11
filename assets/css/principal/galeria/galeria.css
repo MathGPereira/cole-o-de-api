@@ -1,0 +1,17 @@
+@import url("./galeria-api/apis.css");
+
+.principal__galeria {
+    text-align: center;
+}
+
+.galeria__titulo {
+    color: var(--color-titulo-galeria);
+    font: var(--font-weight-titulo-galeria) var(--font-size-titulo-galeria) var(--font-family-padrao);
+    padding: 1em 0 0;
+}
+
+.galeria__artigos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

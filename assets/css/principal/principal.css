@@ -1,5 +1,6 @@
 @import url("./sobre-galeria/sobre-galeria.css");
 @import url("./citacao/citacao.css");
+@import url("./galeria/galeria.css");
 
 .principal {
     box-sizing: border-box;
