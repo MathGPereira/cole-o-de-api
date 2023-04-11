@@ -1,0 +1,15 @@
+.principal__citacao {
+    background-color: var(--background-citacao);
+    color: var(--color-citacao);
+    padding: 2em 1em 1.5em;
+}
+
+.citacao__titulo {
+    font-size: var(--font-size-titulo-citacao);
+    font-weight: var(--font-weight-titulo-citacao);
+    padding: 1em 0;
+}
+
+.citacao__personagem {
+    font: italic 400 22px/1.5em var(--font-family-padrao)
+}

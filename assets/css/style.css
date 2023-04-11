@@ -28,6 +28,12 @@
             --font-size-titulo-sobre-galeria: 24px;
             --font-weight-titulo-sobre-galeria: 700;
         /* Sobre-galeria */
+        /* Citacao */
+            --background-citacao: #041014;
+            --color-citacao: #FCFCFC;
+            --font-size-titulo-citacao: 18px;
+            --font-weight-titulo-citacao: 500;
+        /* Citacao */
     /* Principal */
 }
 
