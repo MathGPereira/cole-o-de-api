@@ -16,9 +16,6 @@ window.addEventListener("load", () => {
         endDate = document.querySelector("[data-end]").value;
         date = document.querySelector("[data-date]").value;
 
-        console.log(typeof date)
-        console.log(typeof startDate)
-        console.log(typeof endDate)
         api(date, count, startDate, endDate, secao);
     });    
 
