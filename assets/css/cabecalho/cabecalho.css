@@ -9,9 +9,7 @@
 
 .cabecalho__titulo {
     align-self: end;
-    font-family: var(--font-family-cabecalho);
-    font-size: var(--font-size-cabecalho);
-    font-weight: var(--font-weight-cabecalho);
+    font: var(--font-weight-cabecalho) var(--font-size-cabecalho) var(--font-family-cabecalho);
     justify-self: center;
 }
 

@@ -1,0 +1,37 @@
+.rodape {
+    background-color: var(--background-rodape);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1em;
+    text-align: left;
+}
+
+.rodape__titulo {
+    font: var(--font-weight-rodape) var(--font-size-rodape) var(--font-family-rodape);
+    text-align: center;
+}
+
+.rodape__link {
+    align-items: center;
+    color: var(--color-link-rodape);
+    display: flex;
+    gap: 10px;
+}
+
+.rodape__link:hover {
+    text-decoration: underline;
+}
+
+.rodape__icone {
+    height: 16px;
+    width: 16px;
+}
+
+.linkedin__icone::before {
+    content: url("../../img/rodape/linkedin.png");
+}
+
+.github__icone::before {
+    content: url("../../img/rodape/github.png");
+}

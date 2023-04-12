@@ -4,6 +4,6 @@
 
 .principal {
     box-sizing: border-box;
-    height: calc(100vh - 11.375em);
+    height: auto;
     width: 100vw;
 }

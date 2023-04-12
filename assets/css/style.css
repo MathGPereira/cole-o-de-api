@@ -47,6 +47,13 @@
             /* Galeria-api */
         /* Galeria */
     /* Principal */
+    /* Rodapé */
+        --background-rodape: #FCFCFC;
+        --color-link-rodape: #141414E3;
+        --font-family-rodape: 'Cute Font', cursive;
+        --font-size-rodape: 32px;
+        --font-weight-rodape: 500;
+    /* Rodapé */
 }
 
 body {
