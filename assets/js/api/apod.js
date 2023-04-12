@@ -1,9 +1,19 @@
-export default async function api(data="", hd="false", count="", start_date="", end_date="", thumbs="false", secao) {
-    const url = `https://api.nasa.gov/planetary/apod?api_key=D11v7QjGEbaTNyv33dKUWZVE2Dt6qwU9jFca9Uhg&count=${count}`;
+export default async function api(date="", count="", start_date="", end_date="", secao) {
+    if(date !== "") {
+        url = `https://api.nasa.gov/planetary/apod?api_key=D11v7QjGEbaTNyv33dKUWZVE2Dt6qwU9jFca9Uhg&date=${date}`;
+        console.log("oi")
+    }else if(start_date !== "" || end_date !== "") {
+        url = `https://api.nasa.gov/planetary/apod?api_key=D11v7QjGEbaTNyv33dKUWZVE2Dt6qwU9jFca9Uhg&start_date=${start_date}&end_date=${end_date}`;
+    }else if(count !== "") {
+        url = `https://api.nasa.gov/planetary/apod?api_key=D11v7QjGEbaTNyv33dKUWZVE2Dt6qwU9jFca9Uhg&count=${count}`;
+    }else {
+        url = `https://api.nasa.gov/planetary/apod?api_key=D11v7QjGEbaTNyv33dKUWZVE2Dt6qwU9jFca9Uhg&count=${count}&date=${date}&start_date=${start_date}&end_date=${end_date}`;
+    }
+
+    console.log(url)
     const apod = await fetch(url);
     const apodJSON = await apod.json();
 
-    verificaUrl(data, count, start_date, end_date);
     colocaImagemNaPagina(apodJSON, secao);
 }
 
@@ -50,6 +60,4 @@ function colocaImagemNaPagina(urls, secao) {
     }
 }
 
-function verificaUrl() {
-
-}
+let url;
