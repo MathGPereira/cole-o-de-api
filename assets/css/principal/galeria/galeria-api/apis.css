@@ -50,6 +50,6 @@
 
 @media screen and (min-width: 600px) {
     .galeria__api {
-        width: 100%;
+        width: calc(100% - 2em);
     }
 }

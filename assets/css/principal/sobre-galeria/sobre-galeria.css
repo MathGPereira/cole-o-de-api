@@ -1,6 +1,8 @@
 .principal__sobre-galeria {
     background-color: var(--background-sobre-galeria);
+    box-sizing: border-box;
     padding: 0 1em 1em;
+    width: 100%;
 }
 
 .sobre-galeria__titulo {
