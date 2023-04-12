@@ -52,7 +52,8 @@
         transition: background-color .3s linear;
     }
 
-    .cabecalho__apis:hover {
+    .cabecalho__apis:hover,
+    .cabecalho__apis:active {
         background-color: #F2F2E2;
     }
 }
