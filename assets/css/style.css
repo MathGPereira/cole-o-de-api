@@ -16,9 +16,9 @@
         --banner-cabecalho: url("../../img/cabecalho/cabecalho-banner.png") no-repeat center center / cover;
     /* Cabeçalho */
     /* Lateral */
-        --background-lateral: #DEDAFF;
+        --background-lateral: #FCFCFC;
         --border-color-hover-lateral: #868399;
-        --color-lateral: #3b3968;
+        --color-lateral: #141414E3;
         --icone-sair-lateral: url("../../img/icones/lateral/x.png") no-repeat center center / cover;
     /* Lateral */
     /* Principal */

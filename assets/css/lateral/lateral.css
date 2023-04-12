@@ -17,6 +17,7 @@
 
 .icone__sair {
     background: var(--icone-sair-lateral);
+    cursor: pointer;
     height: 32px;
     margin-bottom: 1.5em;
     width: 32px;
