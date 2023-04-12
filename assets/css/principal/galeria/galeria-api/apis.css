@@ -47,3 +47,9 @@
 .api__botao:active {
     background-color: #690000a2;
 }
+
+@media screen and (min-width: 600px) {
+    .galeria__api {
+        width: calc(53.5% - 2em);
+    }
+}

@@ -19,3 +19,10 @@
     flex-direction: column;
     gap: 1.5em;
 }
+
+@media screen and (min-width: 600px) {
+    .galeria__artigos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
