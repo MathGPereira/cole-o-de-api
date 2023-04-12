@@ -8,7 +8,7 @@ export default async function api(data="", hd="false", count="", start_date="", 
 }
 
 function colocaImagemNaPagina(urls, secao) {
-    if(secao.dataset === "sobreApi") {
+    if(secao.dataset.resultadoApi === "resultadoApi") {
         secao.innerHTML = "";
     }
 
