@@ -79,51 +79,66 @@
                 <h3 class="sobre-api__imagem-exemplo">Imagem de Exemplo</h3>
             </section>
             <section class="principal__explicar-parametros">
+                <h2 class="sobre-api__titulo">
+                    Parâmetros da API <abbr title="Astronomy Picture of the Day" class="titulo__sigla">APOD</abbr>
+                </h2>
                 <table class="explicar-parametros__tabela">
                     <thead class="tabela__cabecalho">
                         <tr class="cabecalho__linha">
                             <th class="linha__coluna">Parâmetro</th>
-                            <th class="linha__coluna">Tipo</th>
-                            <th class="linha__coluna">Valor padrão</th>
+                            <th class="linha__coluna linha__coluna-tipo">Tipo</th>
+                            <th class="linha__coluna linha__coluna-padrao">Padrão</th>
                             <th class="linha__coluna">Descrição</th>
                         </tr>
                     </thead>
                     <tbody class="tabela__corpo">
                         <tr class="corpo__linha">
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
+                            <td class="linha__coluna">date</td>
+                            <td class="linha__coluna linha__coluna-tipo">AAAA-MM-DD</td>
+                            <td class="linha__coluna linha__coluna-padrao">Hoje</td>
+                            <td class="linha__coluna linha__coluna-descricao">
+                                <p>A data da imagem APOD a ser recuperada</p>
+                            </td>
                         </tr>
                         <tr class="corpo__linha">
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
+                            <td class="linha__coluna">hd</td>
+                            <td class="linha__coluna linha__coluna-tipo">Booleano</td>
+                            <td class="linha__coluna linha__coluna-padrao">False</td>
+                            <td class="linha__coluna linha__coluna-descricao">
+                                <p>Um parâmetro que indica se as imagens de alta resolução devem ou não ser retornadas.</p>
+                            </td>
                         </tr>
                         <tr class="corpo__linha">
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
+                            <td class="linha__coluna">count</td>
+                            <td class="linha__coluna linha__coluna-tipo">Inteiro</td>
+                            <td class="linha__coluna linha__coluna-padrao">None</td>
+                            <td class="linha__coluna linha__coluna-descricao">
+                                <p>Se isso for especificado, as imagens escolhidas aleatoriamente serão retornadas. </p>
+                            </td>
                         </tr>
                         <tr class="corpo__linha">
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
+                            <td class="linha__coluna">start_date</td>
+                            <td class="linha__coluna linha__coluna-tipo">AAAA-MM-DD</td>
+                            <td class="linha__coluna linha__coluna-padrao">None</td>
+                            <td class="linha__coluna linha__coluna-descricao">
+                                <p>O início de um intervalo de datas, ao solicitar data para um intervalo de datas.</p>
+                            </td>
                         </tr>
                         <tr class="corpo__linha">
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
+                            <td class="linha__coluna">end_date</td>
+                            <td class="linha__coluna linha__coluna-tipo">AAAA-MM-DD</td>
+                            <td class="linha__coluna linha__coluna-padrao">None</td>
+                            <td class="linha__coluna linha__coluna-descricao">
+                                <p>O fim do intervalo de datas, quando usado com .start_date</p>
+                            </td>
                         </tr>
                         <tr class="corpo__linha">
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
-                            <td class="linha__coluna"></td>
+                            <td class="linha__coluna">thumbs</td>
+                            <td class="linha__coluna linha__coluna-tipo">Boleano</td>
+                            <td class="linha__coluna linha__coluna-padrao">False</td>
+                            <td class="linha__coluna linha__coluna-descricao">
+                                <p>Retorne o URL da miniatura do vídeo. Se um APOD não for um vídeo, esse parâmetro será ignorado.</p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

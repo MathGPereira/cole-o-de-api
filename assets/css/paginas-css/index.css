@@ -3,6 +3,7 @@
 :root {
     /* Nasa */
         --background-sobre: #e0e0e077;
+        --background-explicar-parametros: #FCFCFC;
         --color-titulo-sobre: #141414E3;
         --font-size-titulo-sobre: 24px;
         --font-weight-titulo-sobre: 700;
@@ -26,7 +27,39 @@
     padding-bottom: 0;
 }
 
+.sobre-api__nome-imagem, .sobre-api__direito-autoral, .sobre-api__link-hd {
+    font-size: 12px;
+    font-style: italic;
+}
+
 .titulo__sigla {
     cursor: help;
     text-decoration: none;
+}
+
+.principal__explicar-parametros {
+    padding: 0 1em 1em;
+}
+
+.explicar-parametros__tabela {
+    background-color: var(--background-explicar-parametros);
+    box-sizing: border-box;
+}
+
+.corpo__linha, .linha__coluna {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.linha__coluna {
+    padding: 8px;
+}
+
+.linha__coluna-padrao, .linha__coluna-tipo {
+    display: none;
+}
+
+.linha__coluna-descricao {
+    text-align: left;
 }
