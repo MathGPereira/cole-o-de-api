@@ -44,8 +44,15 @@
     }
 
     .cabecalho__apis {
+        border-radius: 8px;
         cursor: pointer;
         display: block;
         justify-self: center;
+        padding: 8px;
+        transition: background-color .3s linear;
+    }
+
+    .cabecalho__apis:hover {
+        background-color: #F2F2E2;
     }
 }
