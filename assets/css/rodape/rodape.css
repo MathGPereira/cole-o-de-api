@@ -35,3 +35,29 @@
 .github__icone::before {
     content: url("../../img/rodape/github.png");
 }
+
+.rodape__email {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .rodape {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(2, auto);
+    }
+
+    .rodape__titulo {
+        grid-area: 1/1/2/3;
+    }
+
+    .rodape__email {
+        align-items: center;
+        color: var(--color-link-rodape);
+        display: flex;
+        gap: 10px;
+    }
+
+    .email__icone::before {
+        content: url("../../img/rodape/email.png");
+    }
+}
