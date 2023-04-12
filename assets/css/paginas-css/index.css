@@ -47,6 +47,7 @@
 .explicar-parametros__tabela {
     background-color: var(--background-explicar-parametros);
     box-sizing: border-box;
+    width: 100%;
 }
 
 .corpo__linha, .linha__coluna {
@@ -83,7 +84,7 @@ th {
 
 .formulario__input {
     margin-bottom: 1em;
-    padding: 5px;
+    padding: 10px;
     width: 50%;
 }
 
@@ -102,10 +103,17 @@ th {
     border: none;
     border-radius: 5px;
     background-color: #041014;
-    padding: 8px;
+    padding: 12px;
     transition: opacity .4s linear;
 }
 
 .formulario__roda-api:hover {
     opacity: .5;
+}
+
+@media screen and (min-width: 992px) {
+    .linha__coluna-padrao, .linha__coluna-tipo {
+        display: table-cell;
+        padding: 1em 0;
+    }
 }

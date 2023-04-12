@@ -145,20 +145,21 @@
                 <h2 class="sobre-api__titulo">Inserir Parâmetros</h2>
                 <form action="#" method="GET" autocomplete="on" class="inserir-parametros__formulario">
                     <label for="date" class="formulario__rotulo">Date</label>
-                    <input type="date" id="date" name="date" class="formulario__input">
+                    <input type="date" id="date" name="date" class="formulario__input" data-date>
                     <label for="count" class="formulario__rotulo">Count</label>
-                    <input type="number" id="count" name="count" class="formulario__input" placeholder="Insira um número">
+                    <input type="number" id="count" name="count" class="formulario__input" placeholder="Insira um número" data-count>
                     <label for="start_date" class="formulario__rotulo">Start_date</label>
-                    <input type="date" id="start_date" name="start_date" class="formulario__input">
+                    <input type="date" id="start_date" name="start_date" class="formulario__input" data-start>
                     <label for="end_date" class="formulario__rotulo">End_date</label>
-                    <input type="date" id="end_date" name="end_date" class="formulario__input">
+                    <input type="date" id="end_date" name="end_date" class="formulario__input" data-end>
                     <label for="thumbs" class="formulario__rotulo checkbox-rotulo">Thumbs</label>
-                    <input type="checkbox" id="thumbs" name="thumbs" class="formulario__input checkbox-input" checked>
+                    <input type="checkbox" id="thumbs" name="thumbs" class="formulario__input checkbox-input" checked data-thumbs>
                     <label for="hd" class="formulario__rotulo checkbox-rotulo">HD</label>
-                    <input type="checkbox" id="hd" name="hd" class="formulario__input checkbox-input" checked>
-                    <button type="submit" class="formulario__roda-api">Executar API</button>
+                    <input type="checkbox" id="hd" name="hd" class="formulario__input checkbox-input" checked data-hd>
+                    <button type="submit" class="formulario__roda-api" data-roda-api>Executar API</button>
                 </form>
             </section>
+            <section class="principal__resultado-api" data-resultado-api></section>
         </main>
         <footer class="rodape">
             <h2 class="rodape__titulo">Contatos</h2>
@@ -177,12 +178,11 @@
             <p class="rodape__copyright">&copy;
                 <a href="http://apod.nasa.gov/apod/astropix.html" target="_blank" rel="external follow" class="copyright">NASA</a>
             </p>
+            <p>Para mais informações: 
+                <a href="https://github.com/nasa/apod-api" rel="external" target="_blank follow">Repositório Github da API APOD.</a>
+            </p>
         </footer>
         <script type="module" src="../js/menu/menu.js"></script>
-        <script type="text/javascript" src="../js/api/apod.js"></script>
+        <script type="module" src="../js/main.js"></script>
     </body>
 </html>
-
-<!--  -->
-<!-- Aqui vai uma tabela explicando os parãmetros -->
-<!-- Aqui vai um formulário para inserir os parâmetros -->

@@ -1,3 +1,22 @@
 .sobre-api__imagem-exemplo {
     width: 100%;
 }
+
+.principal__resultado-api {
+    padding: 0 1em 1em;
+}
+
+@media screen and (min-width: 992px) {
+    .principal__resultado-api {
+        display: grid;
+        column-gap: 10px;
+        grid-template: repeat(1, auto) / repeat(2, auto);
+        margin-bottom: 3em;
+        row-gap: 4em;
+    }
+
+    .sobre-api__imagem-exemplo {
+        height: 100%;
+        width: 100%;
+    }
+}
