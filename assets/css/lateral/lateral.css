@@ -116,3 +116,26 @@
         left: 55%;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .lateral {
+        background-color: transparent;
+        box-shadow: none;
+        display: block;
+        left: 0;
+        padding: 0 0 0 1em;
+        top: 56px;
+    }
+
+    .navegacao__lista-apis {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .lista-apis__item-api:hover {
+        border-left: none;
+        border-bottom: 4px solid var(--border-color-hover-lateral);
+        border-radius: 4px;
+    }
+}
