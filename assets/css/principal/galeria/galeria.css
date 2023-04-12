@@ -26,3 +26,10 @@
         grid-template: repeat(5, auto) / repeat(2, auto);
     }
 }
+
+@media screen and (min-width: 992px) {
+    .galeria__artigos {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(3, auto);
+    }
+}
