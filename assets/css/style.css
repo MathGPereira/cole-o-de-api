@@ -9,6 +9,7 @@
     /* Body */
     /* Cabeçalho */
         --background-cabecalho: #FCFCFC;
+        --color-link-titulo-cabecalho: #000000;
         --font-family-cabecalho: 'Cute Font', cursive;
         --font-size-cabecalho: 32px;
         --font-weight-cabecalho: 500;
