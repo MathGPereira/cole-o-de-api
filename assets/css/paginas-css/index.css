@@ -4,7 +4,10 @@
     /* Nasa */
         --background-sobre: #e0e0e077;
         --background-explicar-parametros: #FCFCFC;
+        --background-inserir-parametros: #e0e0e077;
+        --background-cabecalho-tabela: #041014;
         --color-titulo-sobre: #141414E3;
+        --color-cabecalho-tabela: #FCFCFC;
         --font-size-titulo-sobre: 24px;
         --font-weight-titulo-sobre: 700;
     /* Nasa */
@@ -52,6 +55,11 @@
     vertical-align: middle;
 }
 
+th {
+    background-color: var(--background-cabecalho-tabela);
+    color: var(--color-cabecalho-tabela);
+}
+
 .linha__coluna {
     padding: 8px;
 }
@@ -62,4 +70,42 @@
 
 .linha__coluna-descricao {
     text-align: left;
+}
+
+.principal__inserir-parametros {
+    background-color: var(--background-inserir-parametros);
+    padding: 0 1em 1em;
+}
+
+.formulario__rotulo, .formulario__input, .formulario__roda-api {
+    display: block;
+}
+
+.formulario__input {
+    margin-bottom: 1em;
+    padding: 5px;
+    width: 50%;
+}
+
+.formulario__rotulo {
+    margin-bottom: 4px;
+}
+
+.checkbox-rotulo, .checkbox-input {
+    display: inline;
+    width: auto;
+}
+
+.formulario__roda-api {
+    color: #FCFCFC;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #041014;
+    padding: 8px;
+    transition: opacity .4s linear;
+}
+
+.formulario__roda-api:hover {
+    opacity: .5;
 }

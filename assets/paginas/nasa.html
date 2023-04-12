@@ -79,9 +79,7 @@
                 <h3 class="sobre-api__imagem-exemplo">Imagem de Exemplo</h3>
             </section>
             <section class="principal__explicar-parametros">
-                <h2 class="sobre-api__titulo">
-                    Parâmetros da API <abbr title="Astronomy Picture of the Day" class="titulo__sigla">APOD</abbr>
-                </h2>
+                <h2 class="sobre-api__titulo">Parâmetros da API</h2>
                 <table class="explicar-parametros__tabela">
                     <thead class="tabela__cabecalho">
                         <tr class="cabecalho__linha">
@@ -143,9 +141,24 @@
                     </tbody>
                 </table>
             </section>
-            <!-- <section class="principal__inserir-parametros">
-                
-            </section> -->
+            <section class="principal__inserir-parametros">
+                <h2 class="sobre-api__titulo">Inserir Parâmetros</h2>
+                <form action="#" method="GET" autocomplete="on" class="inserir-parametros__formulario">
+                    <label for="date" class="formulario__rotulo">Date</label>
+                    <input type="date" id="date" name="date" class="formulario__input">
+                    <label for="count" class="formulario__rotulo">Count</label>
+                    <input type="number" id="count" name="count" class="formulario__input" placeholder="Insira um número">
+                    <label for="start_date" class="formulario__rotulo">Start_date</label>
+                    <input type="date" id="start_date" name="start_date" class="formulario__input">
+                    <label for="end_date" class="formulario__rotulo">End_date</label>
+                    <input type="date" id="end_date" name="end_date" class="formulario__input">
+                    <label for="thumbs" class="formulario__rotulo checkbox-rotulo">Thumbs</label>
+                    <input type="checkbox" id="thumbs" name="thumbs" class="formulario__input checkbox-input" checked>
+                    <label for="hd" class="formulario__rotulo checkbox-rotulo">HD</label>
+                    <input type="checkbox" id="hd" name="hd" class="formulario__input checkbox-input" checked>
+                    <button type="submit" class="formulario__roda-api">Executar API</button>
+                </form>
+            </section>
         </main>
         <footer class="rodape">
             <h2 class="rodape__titulo">Contatos</h2>
