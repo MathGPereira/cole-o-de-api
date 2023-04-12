@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 600px) {
     .galeria__artigos {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template: repeat(5, auto) / repeat(2, auto);
     }
 }
