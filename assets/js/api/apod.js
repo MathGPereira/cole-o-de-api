@@ -8,7 +8,9 @@ export default async function api(data="", hd="false", count="", start_date="", 
 }
 
 function colocaImagemNaPagina(urls, secao) {
-    secao.innerHTML = "";
+    if(secao.dataset === "sobreApi") {
+        secao.innerHTML = "";
+    }
 
     if(urls.length === 1) {
         const blocoImagemDireito = `
