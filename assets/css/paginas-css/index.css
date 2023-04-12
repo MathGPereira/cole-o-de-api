@@ -2,6 +2,31 @@
 
 :root {
     /* Nasa */
-        --color-titulo-sobre-galeria: #141414E3;
+        --background-sobre: #e0e0e077;
+        --color-titulo-sobre: #141414E3;
+        --font-size-titulo-sobre: 24px;
+        --font-weight-titulo-sobre: 700;
     /* Nasa */
+}
+
+.principal__sobre-api {
+    background-color: var(--background-sobre);
+    padding: 0 1em 1em;
+}
+
+.sobre-api__titulo, .sobre-api__imagem-exemplo {
+    color: var(--color-titulo-sobre);
+    font-size: var(--font-size-titulo-sobre);
+    font-weight: var(--font-weight-titulo-sobre);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.sobre-api__imagem-exemplo {
+    padding-bottom: 0;
+}
+
+.titulo__sigla {
+    cursor: help;
+    text-decoration: none;
 }
