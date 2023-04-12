@@ -123,7 +123,9 @@
         box-shadow: none;
         display: block;
         left: 0;
-        padding: 0 0 0 1em;
+        margin: 0 auto;
+        padding: 0;
+        right: 0;
         top: 56px;
     }
 
@@ -131,6 +133,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .lista-apis__item-api:hover {

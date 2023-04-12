@@ -58,5 +58,5 @@
 
 body {
     font: var(--font-style-padrao) var(--font-weight-padrao) var(--font-size-padrao)/var(--line-height-padrao) var(--font-family-padrao);
-    height: 100vh;
+    height: auto;
 }
