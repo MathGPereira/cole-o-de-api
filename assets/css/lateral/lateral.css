@@ -80,3 +80,33 @@
 .lista-apis__item-api--filmes::before {
     content: url("../../img/icones/lateral/filmes.png");
 }
+
+@media screen and (min-width: 600px) {
+    @keyframes abreMenu {
+        0% {height: 0;}
+        20% {height: 100px;}
+        40% {height: 200px;}
+        60% {height: 300px;}
+        80% {height: 400px;}
+        100% {height: auto;}
+    }
+
+    .lateral {
+        box-sizing: border-box;
+        display: none;
+        height: auto;
+        left: 42%;
+        padding: 1.5em;
+        top: 10%;
+        width: auto;
+    }
+
+    .lateral--ativo {
+        animation: abreMenu .05s linear;
+        display: block;
+    }
+
+    .lateral__icone {
+        display: none;
+    }
+}
