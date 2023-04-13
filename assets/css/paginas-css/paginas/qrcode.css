@@ -1,7 +1,37 @@
+.principal__explicar-parametros {
+    padding: 0;
+}
+
 .imagem-qrcode {
     display: block;
     margin: 1em auto;
     width: 100%;
+}
+
+.explicar-parametros__lista-ordenada {
+    list-style: decimal;
+    padding: 0 1em;
+}
+
+.item__titulo {
+    font-size: var(--font-size-titulo-lista);
+    font-weight: var(--font-weight-titulo-lista);
+}
+
+.item__lista-desordenada {
+    margin: .5em 0 1em;
+}
+
+.item__subtitulo {
+    font-weight: var(--font-weight-sub-titulo-lista);
+    text-indent: 1em;
+}
+
+.item__descricao {
+    line-height: 1.3em;
+    margin: .5em 0;
+    padding: 0 1em;
+    text-indent: 2em;
 }
 
 @media screen and (min-width: 500px) {

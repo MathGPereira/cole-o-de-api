@@ -12,6 +12,11 @@
         --font-size-titulo-sobre: 24px;
         --font-weight-titulo-sobre: 700;
     /* Nasa */
+    /* QR code */
+        --font-size-titulo-lista: 18px;
+        --font-weight-titulo-lista: 700;
+        --font-weight-sub-titulo-lista: 500;
+    /* QR code */
 }
 
 .principal__sobre-api {

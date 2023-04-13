@@ -1,4 +1,4 @@
-async function qrcode(informacao, tamanho, secao) {
+async function qrcode(informacao, tamanho="", secao) {
     const url = `http://api.qrserver.com/v1/create-qr-code/?data=${informacao}&size=${tamanho}x${tamanho}`;
     const qr = await fetch(url);
 

@@ -70,7 +70,7 @@
         <main class="principal">
             <section class="principal__sobre-api" data-sobre-api>
                 <h2 class="sobre-api__titulo">
-                    Sobre API <abbr title="Astronomy Picture of the Day" class="titulo__sigla">APOD</abbr>
+                    Sobre API
                 </h2>
                 <p class="sobre-galeria__descricao">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque ex recusandae accusamus laudantium accusantium asperiores, labore in, dignissimos quo, odit hic quod corrupti. Accusantium dolores veritatis recusandae excepturi vitae!
@@ -80,66 +80,137 @@
             </section>
             <section class="principal__explicar-parametros">
                 <h2 class="sobre-api__titulo">Parâmetros da API</h2>
-                <table class="explicar-parametros__tabela">
-                    <thead class="tabela__cabecalho">
-                        <tr class="cabecalho__linha">
-                            <th class="linha__coluna">Parâmetro</th>
-                            <th class="linha__coluna linha__coluna-tipo">Tipo</th>
-                            <th class="linha__coluna linha__coluna-padrao">Padrão</th>
-                            <th class="linha__coluna">Descrição</th>
-                        </tr>
-                    </thead>
-                    <tbody class="tabela__corpo">
-                        <tr class="corpo__linha">
-                            <td class="linha__coluna">date</td>
-                            <td class="linha__coluna linha__coluna-tipo">AAAA-MM-DD</td>
-                            <td class="linha__coluna linha__coluna-padrao">Hoje</td>
-                            <td class="linha__coluna linha__coluna-descricao">
-                                <p>A data da imagem APOD a ser recuperada</p>
-                            </td>
-                        </tr>
-                        <tr class="corpo__linha">
-                            <td class="linha__coluna">hd</td>
-                            <td class="linha__coluna linha__coluna-tipo">Booleano</td>
-                            <td class="linha__coluna linha__coluna-padrao">False</td>
-                            <td class="linha__coluna linha__coluna-descricao">
-                                <p>Um parâmetro que indica se as imagens de alta resolução devem ou não ser retornadas.</p>
-                            </td>
-                        </tr>
-                        <tr class="corpo__linha">
-                            <td class="linha__coluna">count</td>
-                            <td class="linha__coluna linha__coluna-tipo">Inteiro</td>
-                            <td class="linha__coluna linha__coluna-padrao">None</td>
-                            <td class="linha__coluna linha__coluna-descricao">
-                                <p>Se isso for especificado, as imagens escolhidas aleatoriamente serão retornadas. </p>
-                            </td>
-                        </tr>
-                        <tr class="corpo__linha">
-                            <td class="linha__coluna">start_date</td>
-                            <td class="linha__coluna linha__coluna-tipo">AAAA-MM-DD</td>
-                            <td class="linha__coluna linha__coluna-padrao">None</td>
-                            <td class="linha__coluna linha__coluna-descricao">
-                                <p>O início de um intervalo de datas, ao solicitar data para um intervalo de datas.</p>
-                            </td>
-                        </tr>
-                        <tr class="corpo__linha">
-                            <td class="linha__coluna">end_date</td>
-                            <td class="linha__coluna linha__coluna-tipo">AAAA-MM-DD</td>
-                            <td class="linha__coluna linha__coluna-padrao">None</td>
-                            <td class="linha__coluna linha__coluna-descricao">
-                                <p>O fim do intervalo de datas, quando usado com .start_date</p>
-                            </td>
-                        </tr>
-                        <tr class="corpo__linha">
-                            <td class="linha__coluna">thumbs</td>
-                            <td class="linha__coluna linha__coluna-tipo">Boleano</td>
-                            <td class="linha__coluna linha__coluna-padrao">False</td>
-                            <td class="linha__coluna linha__coluna-descricao">
-                                <p>Retorne o URL da miniatura do vídeo. Se um APOD não for um vídeo, esse parâmetro será ignorado.</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ol class="explicar-parametros__lista-ordenada">
+                    <li class="lista-ordenada__item">
+                        <h3 class="item__titulo">Parâmetro de dados (obrigatório)</h3>
+                        <ul class="item__lista-desordenada">
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Contagem mínima de caracteres:</h4>
+                                <p class="item__descricao">1</p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Contagem máxima de caracteres:</h4>
+                                <p class="item__descricao">
+                                    Depende do parâmetro ecc (quanto mais redundância de dados é usada, menos caracteres cabem no seu código QR).
+                                    No entanto, até 900 caracteres devem funcionar em geral.
+                                </p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Práticas recomendadas:</h4>
+                                <p class="item__descricao">
+                                    Quanto mais curto, melhor, você deve usar o mínimo de dados possível. É Sugerido o uso de encurtadores de URL como bitly para URLs muito longas ou até mesmo encurtar a sua URL utilizando a API que está também na nossa galeria.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lista-ordenada__item">
+                        <h3 class="item__titulo">Parâmetro de tamanho (opcional)</h3>
+                        <ul class="item__lista-desordenada">
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Formato:</h4>
+                                <p class="item__descricao">[inteiro] x [inteiro]
+                                    <span class="descricao__obs">
+                                        Aqui na galeria você não precisa se preocupar em passar o tamanho neste formato pedido pela API, pois nós fazemos isso por você. Basta inserir um valor (como 120, por exemplo) que tudo funcionará normalmente
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Valor mínimo:</h4>
+                                <p class="item__descricao">
+                                    10 x 10
+                                </p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Valor máximo:</h4>
+                                <p class="item__descricao">
+                                    1000 x 1000
+                                </p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Padrão:</h4>
+                                <p class="item__descricao">
+                                    Será usado um tamanho de 200 x 200 caso não seja fornecido nenhum valor
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lista-ordenada__item">
+                        <h3 class="item__titulo">Parâmetro charset-source (opcional)</h3>
+                        <ul class="item__lista-desordenada">
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Valores possíveis:</h4> 
+                                <p class="item__descricao">UTF-8</p>
+                                <p class="item__descricao">ISO-8859-1</p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Padrão:</h4>
+                                <p class="item__descricao">
+                                    Será usado UTF-8 se nenhum valor for informado ou se for informado um valor inválido.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lista-ordenada__item">
+                        <h3 class="item__titulo">Parâmetro charset-target (opcional)</h3>
+                        <ul class="item__lista-desordenada">
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Valores possíveis:</h4> 
+                                <p class="item__descricao">UTF-8</p>
+                                <p class="item__descricao">ISO-8859-1</p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Padrão:</h4>
+                                <p class="item__descricao">
+                                    Será usado UTF-8 se nenhum valor for informado ou se for informado um valor inválido.
+                                </p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Boas práticas:</h4>
+                                <p class="item__descricao">
+                                    Se você quiser estar no lado seguro em todos os casos, você deve usar apenas os seguintes caracteres (=ASCII):
+                                    !" #$%&'()*+,-./0123456789:;&lt; = &gt;?
+                                    @ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+                                    'abcdefghijklmnopqrstuvwxyz{|} ~
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lista-ordenada__item">
+                        <h3 class="item__titulo">Parâmetro ecc (opcional)</h3>
+                        <ul class="item__lista-desordenada">
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Valores possíveis:</h4> 
+                                <p class="item__descricao">
+                                    L (baixo, ~7% de dados destruídos podem ser corrigidos) M (meio, ~15% de dados destruídos podem ser corrigidos) Q (qualidade, ~25% de dados destruídos podem ser corrigidos) H (alto, ~30% de dados destruídos podem ser corrigidos)
+                                </p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Padrão:</h4>
+                                <p class="item__descricao">L</p>
+                            </li>
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Práticas recomendadas:</h4>
+                                <p class="item__descricao">
+                                    Um ECC mais alto resulta em mais dados para salvar e, portanto, leva a um código QR com mais pixels de dados e uma matriz de dados maior. Como muitos leitores de telefones celulares têm problemas com códigos QR >Versão 4 (isso significa uma matriz de módulos 33×33), o ECC mais baixo é a melhor escolha para o propósito comum – leitores de código QR legados são um problema mais comum do que os códigos QR destruídos.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lista-ordenada__item">
+                        <h3 class="item__titulo">Parâmetro cor (opcional)</h3>
+                        <ul class="item__lista-desordenada">
+                            <li class="lista-desordenada__item">
+                                <h4 class="item__subtitulo">Formato:</h4>
+                                <p class="item__descricao">
+                                    Decimal ([0-255]-[0-255]-[0-255]) ou valor hexadecimal em formato curto ([a-fA-F] três caracteres, por exemplo, fff para branco) ou formato longo ([a-fA-F] seis caracteres, por exemplo, ff0000 para vermelho).
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>Para mais informações a cerca dos parâmetros, veja o
+                    <a href="https://goqr.me/api/doc/create-qr-code/" target="_blank" rel="nofollow external" class="sobre-api__link-hd">link para a documentação</a>
+                </p>
             </section>
         </main>
         <footer class="rodape">
