@@ -1,0 +1,11 @@
+.imagem-qrcode {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .imagem-qrcode {
+        width: 50%;;
+    }
+}
