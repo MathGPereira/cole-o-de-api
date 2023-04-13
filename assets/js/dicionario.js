@@ -3,8 +3,12 @@ async function dict(palavra) {
     const significado = await fetch(url);
     const significadoJson = await significado.json();
 
-    trataJson(significadoJson);
-    imprimeNaTela()
+    trataJson(significadoJson[0]);
+    // imprimeNaTela()
 }
 
-dict();
+function trataJson(json) {
+    console.log(json);
+}
+
+dict("Breast");
