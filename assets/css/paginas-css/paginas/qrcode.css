@@ -34,6 +34,23 @@
     text-indent: 2em;
 }
 
+.sobre-api__link-qr {
+    font-size: 1em;
+}
+
+#cor {
+    height: 40px;
+    padding: 0;
+    width: 100px;
+}
+
+#qrcode {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media screen and (min-width: 500px) {
     .imagem-qrcode {
         width: 50%;;
