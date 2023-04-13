@@ -1,5 +1,4 @@
 import api from "./api/apod.js";
-import qrcode from "./api/qrcode.js";
 
 let count;
 let startDate;
@@ -25,19 +24,4 @@ window.addEventListener("load", () => {
     }catch(erro) {
         console.log(erro);
     }
-});
-
-const botaoRodaQrCode = document.querySelector("[data-roda-qrcode]");
-
-botaoRodaQrCode.addEventListener("click", evento => {
-    evento.preventDefault();
-
-    const conteudo = document.querySelector("[data-conteudo]").value;
-    const tamanho = document.querySelector("[data-tamanho]").value;
-    const source = document.querySelector("[data-source]").value;
-    const target = document.querySelector("[data-target]").value;
-    const ecc = document.querySelector("[data-ecc]").value;
-    const cor = document.querySelector("[data-cor]").value.replace("#", "");
-    
-    qrcode(conteudo, tamanho, source, target, ecc, cor, secao);
 });
