@@ -1,29 +1,29 @@
-async function dict(palavra) {
+export default async function dict(palavra, secao) {
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${palavra}`;
     const significado = await fetch(url);
     const significadoJson = await significado.json();
 
-    testaJson(significadoJson[0]);
+    testaJson(significadoJson[0], secao);
 }
 
-function testaJson(json) {
-    palavra(json.word);
-    fonetica(json.phonetics);
-    significados(json.meanings);
-    licensa(json.license);
-    fonteUrls(json.sourceUrls);
+function testaJson(json, secao) {
+    palavra(json.word, secao);
+    fonetica(json.phonetics, secao);
+    significados(json.meanings, secao);
+    licensa(json.license, secao);
+    fonteUrls(json.sourceUrls, secao);
 }
 
-function palavra(palavra) {
+function palavra(palavra, secao) {
     const nodeTagTitulo = `
         <h4 class="sobre-api__titulo-exemplo">Palavra:</h4>
         <p class="sobre-api__palavra">${palavra}</p>
     `;
 
-    sobreApi.innerHTML += nodeTagTitulo;
+    secao.innerHTML += nodeTagTitulo;
 }
 
-function fonetica(sons) {
+function fonetica(sons, secao) {
     sons.forEach(som => {
         if(som.audio !== "") {
             const nodeTagAudio = `
@@ -31,16 +31,15 @@ function fonetica(sons) {
                 <audio src="${som.audio}" class="audio" controls></audio>
                 <div class="licensa__links">
                     <a href="${som.license.url}" rel="external nofollow" target="_blank" class="licensa__link">${som.license.name}</a>
-                    <a href="${som.license.sourceUrl}" rel="external nofollow" target="_blank" class="licensa__link">Origem</a>
                 </div>
             `;
 
-            sobreApi.innerHTML += nodeTagAudio;
+            secao.innerHTML += nodeTagAudio;
         }
     });
 }
 
-function significados(significados) {
+function significados(significados, secao) {
     significados.forEach(significado => {
         if(significado.antonyms.length > 0) {
             const ul = document.createElement("ul");
@@ -56,8 +55,8 @@ function significados(significados) {
 
             ul.setAttribute("class", "lista__antonimos");
 
-            sobreApi.innerHTML += titulo;
-            sobreApi.appendChild(ul);
+            secao.innerHTML += titulo;
+            secao.appendChild(ul);
         }
 
         if(significado.synonyms.length > 0) {
@@ -73,9 +72,9 @@ function significados(significados) {
             const titulo = "<h5 class='antonimo__titulo'>Sinônimos:</h5>";
 
             ul.setAttribute("class", "lista__sinonimos");
-            sobreApi.innerHTML += titulo;
+            secao.innerHTML += titulo;
 
-            sobreApi.appendChild(ul);
+            secao.appendChild(ul);
         }
 
         if(significado.definitions.length > 0) {
@@ -94,15 +93,15 @@ function significados(significados) {
             const tipo = `<p class='definicoes__tipo'>${significado.partOfSpeech}</p>`;
 
             ul.setAttribute("class", "lista__definicoes");
-            sobreApi.innerHTML += titulo;
-            sobreApi.innerHTML += tipo;
+            secao.innerHTML += titulo;
+            secao.innerHTML += tipo;
 
-            sobreApi.appendChild(ul);
+            secao.appendChild(ul);
         }
     });
 }
 
-function licensa(license) {
+function licensa(license, secao) {
     const nome = license.name;
     const url = license.url;
     const h5 = document.createElement("h5");
@@ -114,21 +113,21 @@ function licensa(license) {
     const titulo = "<h5 class='antonimo__definicoes'>Licensa:</h5>";
     a.innerHTML = "Origem";
 
-    sobreApi.innerHTML += titulo;
-    sobreApi.appendChild(h5);
-    sobreApi.appendChild(a);
+    secao.innerHTML += titulo;
+    secao.appendChild(h5);
+    secao.appendChild(a);
 }
 
-function fonteUrls(urls) {
+function fonteUrls(urls, secao) {
     const copyright = urls[0];
     const a = document.createElement("a");
 
     a.setAttribute("href", copyright);
     a.innerHTML = "Fonte";
 
-    sobreApi.appendChild(a);
+    secao.appendChild(a);
 }
 
 const sobreApi = document.querySelector("[data-sobre-api]");
 
-dict("breast");
+dict("breast", sobreApi);

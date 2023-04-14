@@ -38,3 +38,13 @@
     font-weight: 700;
     text-transform: capitalize;
 }
+
+.parametro__descricao {
+    font-style: italic;
+    margin-top: 1em;
+}
+
+.explicar-parametro__parametro {
+    font-size: 18px;
+    font-weight: 500;
+}

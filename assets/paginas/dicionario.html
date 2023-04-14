@@ -78,6 +78,20 @@
                 </p>
                 <h3 class="sobre-api__imagem-exemplo">Palavra de exemplo</h3>
             </section>
+            <section class="principal__explicar-parametros">
+                <h2 class="sobre-api__titulo">Parâmetros da API</h2>
+                <h3 class="explicar-parametro__parametro">Palavra: </h3>
+                <p class="parametro__descricao">Inserir qualquer palavra em inglês que a API irá retornar o resultado abaixo</p>
+            </section>
+            <section class="principal__inserir-parametros">
+                <h2 class="sobre-api__titulo">Inserir Parâmetros</h2>
+                <form action="#" method="GET" autocomplete="on" class="inserir-parametros__formulario">
+                    <label for="palavra" class="formulario__rotulo">Palavra</label>
+                    <input type="text" id="palavra" name="palavra" class="formulario__input" placeholder="world" data-palavra>
+                    <button type="submit" class="formulario__roda-api" data-roda-api>Executar API</button>
+                </form>
+            </section>
+            <section class="principal__resultado-api" data-resultado-api></section>
         </main>
         <footer class="rodape">
             <h2 class="rodape__titulo">Contatos</h2>
@@ -96,6 +110,5 @@
         </footer>
         <script type="module" src="../js/menu/menu.js"></script>
         <script type="module" src="../js/dicionario.js"></script>
-        <script src="../js/api/dict.js"></script>
     </body>
 </html>
