@@ -1,0 +1,40 @@
+.sobre-api__titulo-exemplo, .audio__titulo, .antonimo__titulo, .antonimo__definicoes {
+    font-size: 18px;
+    font-weight: 700;
+    color: #141414E3;
+    margin: 1em 0 .5em;
+}
+
+.sobre-api__palavra {
+    text-transform: capitalize;
+}
+
+.audio {
+    display: block;
+}
+
+.licensa__links {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.licensa__link {
+    font-size: 14px;
+}
+
+.lista__antonimos, .lista__sinonimos, .lista__definicoes {
+    font-style: italic;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+.item__definicao {
+    margin-bottom: .5em;
+}
+
+.definicoes__tipo {
+    font-style: italic;
+    margin-bottom: 1em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
