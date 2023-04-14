@@ -6,7 +6,9 @@ export default async function qrcode(informacao, tamanho=200, charsetSource="UTF
 }
 
 function colocaQrCodeNaTela(qr, secao) {
-    secao.innerHTML = "";
+    if(secao.dataset.resultadoApi === "resultadoApi") {
+        secao.innerHTML = "";
+    }
 
     const qrCodeGerado = `
         <img src="${qr.url}" alt="Código de barras do tipo QR Code" class="imagem-qrcode">

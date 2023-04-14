@@ -3,7 +3,10 @@ export default async function dict(palavra, secao) {
     const significado = await fetch(url);
     const significadoJson = await significado.json();
 
-    secao.innerHTML = "";
+    if(secao.dataset.resultadoApi === "resultadoApi") {
+        secao.innerHTML = "";
+    }
+
     testaJson(significadoJson[0], secao);
 }
 
