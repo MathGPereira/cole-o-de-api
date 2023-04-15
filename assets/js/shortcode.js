@@ -6,9 +6,9 @@ const resultado = document.querySelector("[data-resultado-api]");
 rodaApi.addEventListener("click", evento => {
     evento.preventDefault();
 
-    const url = document.querySelector("[data-url]").value;
+    const urlInput = document.querySelector("[data-url]").value;
 
-    url(url, resultado);
+    url(urlInput, resultado);
 });
 
 

@@ -1,0 +1,32 @@
+.principal__resultado-api {
+    display: block;
+    /* flex-direction: column;
+    row-gap: 1em; */
+}
+
+.link-original {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.link__lista {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.lista__item {
+    font-size: 16px;
+}
+
+.ultimo__titulo {
+    text-align: left;
+}
+
+.item__ultimo {
+    flex-grow: 1;
+}
