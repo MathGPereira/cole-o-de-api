@@ -7,9 +7,13 @@ export default async function url(url, secao) {
         secao.innerHTML = "";
     }
 
-    imprimeNaTela(urlJson);
+    imprimeNaTela(urlJson, secao);
 }
 
-function imprimeNaTela(json) {
+function imprimeNaTela(json, secao) {
     console.log(json.result);
 }
+
+const sobreApi = document.querySelector("[data-sobre-api]");
+
+url("www.google.com", sobreApi);
