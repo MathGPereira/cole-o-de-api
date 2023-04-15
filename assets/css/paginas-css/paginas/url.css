@@ -1,7 +1,6 @@
 .principal__resultado-api {
     display: block;
-    /* flex-direction: column;
-    row-gap: 1em; */
+    box-sizing: border-box;
 }
 
 .link-original {
