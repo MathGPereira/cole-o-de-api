@@ -1,6 +1,7 @@
 import qrcode from "./api/qrcode.js";
 
 const botaoRodaQrCode = document.querySelector("[data-roda-qrcode]");
+const resultado = document.querySelector("[data-resultado-api]");
 
 botaoRodaQrCode.addEventListener("click", evento => {
     evento.preventDefault();
@@ -11,6 +12,6 @@ botaoRodaQrCode.addEventListener("click", evento => {
     const target = document.querySelector("[data-target]").value;
     const ecc = document.querySelector("[data-ecc]").value;
     const cor = document.querySelector("[data-cor]").value.replace("#", "");
-    
-    qrcode(conteudo, tamanho, source, target, ecc, cor, secao);
+
+    qrcode(conteudo, tamanho, source, target, ecc, cor, resultado);
 });
