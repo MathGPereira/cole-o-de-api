@@ -11,6 +11,7 @@
         <link type="text/css" rel="stylesheet" href="../css/lateral/lateral.css">
         <link type="text/css" rel="stylesheet" href="../css/principal/principal.css">
         <link type="text/css" rel="stylesheet" href="../css/rodape/rodape.css">
+        <link type="text/css" rel="stylesheet" href="../css/paginas-css/index.css">
         <link type="image/x-icon" rel="shortcut icon" href="../img/icones/navegador/icone-principal.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +67,32 @@
                 </ul>
             </nav>
         </aside>
-
+        <main class="principal">
+            <section class="principal__sobre-api" data-sobre-api>
+                <h2 class="sobre-api__titulo">
+                    Sobre API
+                </h2>
+                <p class="sobre-galeria__descricao">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque ex recusandae accusamus laudantium accusantium asperiores, labore in, dignissimos quo, odit hic quod corrupti. Accusantium dolores veritatis recusandae excepturi vitae!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, veniam! Neque corrupti alias quaerat ipsam aspernatur modi dolorum eum blanditiis saepe possimus, quisquam vel voluptatum esse. Cumque obcaecati unde sint.
+                </p>
+                <h3 class="sobre-api__imagem-exemplo">URL de exemplo</h3>
+            </section>
+            <section class="principal__explicar-parametros">
+                <h2 class="sobre-api__titulo">Parâmetros da API</h2>
+                <h3 class="explicar-parametro__parametro">URL: </h3>
+                <p class="parametro__descricao">Inserir qualquer url válida</p>
+            </section>
+            <section class="principal__inserir-parametros">
+                <h2 class="sobre-api__titulo">Inserir Parâmetros</h2>
+                <form action="#" method="GET" autocomplete="on" class="inserir-parametros__formulario">
+                    <label for="palavra" class="formulario__rotulo">URL</label>
+                    <input type="url" id="palavra" name="palavra" class="formulario__input" placeholder="www.google.com" data-url>
+                    <button type="submit" class="formulario__roda-api" data-roda-api>Executar API</button>
+                </form>
+            </section>
+            <section class="principal__resultado-api" data-resultado-api="resultadoApi"></section>
+        </main>
         <footer class="rodape">
             <h2 class="rodape__titulo">Contatos</h2>
             <a href="https://www.linkedin.com/in/matheuspereiradevfront/" rel="external" target="_blank" class="rodape__linkedin rodape__link">
@@ -82,6 +108,7 @@
                 <p class="email__nome">matheusgp.mto@outlook.com</p>
             </div>
         </footer>
-        <script type="module" src="./assets/js/mobile/mobile.js"></script>
+        <script type="module" src="../js/menu/menu.js"></script>
+        <script type="module" src="../js/shortcode.js"></script>
     </body>
 </html>
